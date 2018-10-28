@@ -1,0 +1,5 @@
+sync/
+wubi86.userdb/
+*.yaml~
+*.bin
+*~

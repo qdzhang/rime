@@ -1,0 +1,5 @@
+# default.custom.yaml  
+# save it to:   
+#   ~/.config/ibus/rime  (linux)  
+#   ~/Library/Rime       (macos)  
+#   %APPDATA%\Rime       (windows)  

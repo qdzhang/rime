@@ -1,0 +1,33 @@
+ascii_composer:
+  switch_key:
+    Caps_Lock: noop
+    Control_L: noop
+    Control_R: noop
+    Eisu_toggle: clear
+    Shift_L: commit_code
+    Shift_R: commit_code
+config_version: .custom.700465946
+customization: 700465946
+menu:
+  page_size: 5
+patch:
+  schema_list:
+    - {schema: xhup}
+    - {schema: wubi_pinyin}
+schema_list:
+  - schema: wubi86
+  - schema: xhup
+style:
+  color_scheme: luna
+  horizontal: true
+switcher:
+  abbreviate_options: true
+  caption: "〔切换〕"
+  fold_options: true
+  hotkeys:
+    - "Control+grave"
+  save_options:
+    - full_shape
+    - ascii_punct
+    - simplification
+    - extended_charset

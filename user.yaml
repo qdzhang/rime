@@ -1,0 +1,11 @@
+var:
+  option:
+    ascii_punct: false
+    full_shape: true
+    simplification: false
+  previously_selected_schema: xhup
+  schema_access_time:
+    luna_pinyin_simp: 1540605581
+    wubi: 1540604850
+    wubi86: 1540635406
+    xhup: 1540635537
