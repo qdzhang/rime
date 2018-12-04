@@ -2,6 +2,7 @@ sync/
 wubi86.userdb/
 luna_pinyin.userdb/
 xhup_luna.userdb/
+pinyin_simp.userdb/
 *.yaml~
 *.bin
 *~

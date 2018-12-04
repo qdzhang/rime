@@ -48,8 +48,7 @@ engine:
 
 speller:
   delimiter: " ;'"
-  max_code_length: 4
-  auto_select: true
+  #max_code_length: 4
 
 translator:
   dictionary: wubi86
@@ -72,7 +71,7 @@ reverse_lookup:
     - xform/([jqxy])v/$1u/
 
 punctuator:
-  import_preset: alternative
+  import_preset: symbols
 
 key_binder:
   import_preset: default

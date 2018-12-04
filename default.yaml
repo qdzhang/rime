@@ -6,8 +6,8 @@ ascii_composer:
     Eisu_toggle: clear
     Shift_L: commit_code
     Shift_R: commit_code
-config_version: .custom.1857273917
-customization: 1857273917
+config_version: .custom.2344631539
+customization: 2344631539
 menu:
   page_size: 5
 patch:
@@ -15,9 +15,10 @@ patch:
     - {schema: xhup}
     - {schema: wubi_pinyin}
 schema_list:
-  - schema: "wubi86　　　　　　　　　"
+  - schema: wubi86
   - schema: xhup
   - schema: english
+  - schema: pinyin_simp
 style:
   color_scheme: luna
   horizontal: true
