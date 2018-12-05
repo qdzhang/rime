@@ -3,14 +3,14 @@ var:
     ascii_punct: false
     full_shape: false
     simplification: false
-  previously_selected_schema: wubi86
+  previously_selected_schema: xhup
   schema_access_time:
     english: 1543925276
     luna_pinyin: 1543738374
     luna_pinyin_simp: 1540605581
-    pinyin_simp: 1543925380
+    pinyin_simp: 1543926881
     wubi: 1540604850
-    wubi86: 1543925982
+    wubi86: 1543973567
     "wubi86　　　　　　　　　": 1543925389
-    xhup: 1543925848
+    xhup: 1543973580
     ying_flypy: 1543737984
