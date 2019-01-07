@@ -16,7 +16,6 @@ patch:
   schema_list:
     - schema: wubi86　　　　　　　　　 # 五笔86
     - schema: xhup                  # 小鹤双拼
-    - schema: english               # 英文单词
     - schema: pinyin_simp           # 袖珍简化字拼音
 
   ascii_composer:

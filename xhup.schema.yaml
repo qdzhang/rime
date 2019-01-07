@@ -97,5 +97,5 @@ switches:
   - name: ascii_punct
     states: ["。，", "．，"]
 translator:
-  dictionary: xhup_luna
+  dictionary: xhup
   enable_charset_filter: true
