@@ -26,8 +26,13 @@ engine:
     - reverse_lookup_translator
 key_binder:
   bindings:
-    - {accept: semicolon, send: 2, when: has_menu}
-    - {accept: apostrophe, send: 3, when: has_menu}
+    - {accept: bracketleft, send: Page_Up, when: has_menu}
+    - {accept: bracketright, send: Page_Down, when: has_menu}
+    - {accept: ";", send: 2, when: composing}
+    - {accept: comma, send: 2, when: composing}
+    - {accept: Tab, send: Escape, when: composing}
+    - {accept: "Release+semicolon", send: semicolon, when: composing}
+    - {accept: "Release+comma", send: comma, when: composing}
   import_preset: default
 punctuator:
   full_shape:
@@ -55,35 +60,39 @@ recognizer:
     uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"
     url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
 reverse_lookup:
-  dictionary: pinyin_simp
+  dictionary: flypydz
   preedit_format:
     - "xform/([nl])v/$1ü/"
     - "xform/([nl])ue/$1üe/"
     - "xform/([jqxy])v/$1u/"
-  prefix: "`"
+  prefix: oi
+  suffix: "'"
   tips: "〔拼音〕"
 schema:
   author:
     - "xhup by 鶴"
-    - "Rime schema by Zhaosheng Pan <brglng@gmail.com>"
+    - "Rime schema by Zhaosheng Pan <zhaosheng.pan@sololand.moe>"
   dependencies:
-    - luna_pinyin
-    - double_pinyin_flypy
+    - flypydz
   description: |
     小鶴雙拼音形方案
     四键自动上屏
     
   name: "小鶴音形"
   schema_id: xhup
-  version: 2016.11.15.0.custom.78359725
+  version: 2018.9.18.0.custom.78359725
 simplifier:
   option_name: zh_simp
 speller:
   algebra:
     - "xform/^([b-df-hj-np-tv-z])$/$1_/"
-  alphabet: zyxwvutsrqponmlkjihgfedcba
+  alphabet: "zyxwvutsrqponmlkjihgfedcba#"
+  auto_clear: max_length
   auto_select: true
+  auto_select_pattern: "^;.$|^\\w{4}$"
   auto_select_unique_candidate: true
+  delimiter: " '"
+  finals: "#"
   max_code_length: 4
 switches:
   - name: ascii_mode
@@ -97,5 +106,5 @@ switches:
   - name: ascii_punct
     states: ["。，", "．，"]
 translator:
-  dictionary: xhup
+  dictionary: xhup_luna
   enable_charset_filter: true

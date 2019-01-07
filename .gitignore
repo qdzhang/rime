@@ -4,6 +4,7 @@ luna_pinyin.userdb/
 xhup_luna.userdb/
 pinyin_simp.userdb/
 xhup.userdb/
+build/
 *.yaml~
 *.bin
 *~
