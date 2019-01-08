@@ -4,10 +4,10 @@ ascii_composer:
     Control_L: noop
     Control_R: noop
     Eisu_toggle: clear
-    Shift_L: commit_code
-    Shift_R: commit_code
-config_version: .custom.2626725378
-customization: 2626725378
+    Shift_L: commit_text
+    Shift_R: inline_ascii
+config_version: .custom.1073390427
+customization: 1073390427
 menu:
   page_size: 5
 patch:
@@ -15,7 +15,7 @@ patch:
     - {schema: xhup}
     - {schema: wubi_pinyin}
 schema_list:
-  - schema: "wubi86"
+  - schema: "wubi86　　　　　　　　　"
   - schema: xhup
   - schema: pinyin_simp
 style:

@@ -1,8 +1,10 @@
-customization: 78359725
+customization: 716111810
 engine:
   filters:
     - simplifier
     - uniquifier
+    - cjk_minifier
+    - cjk_minifier
     - cjk_minifier
   processors:
     - ascii_composer
@@ -23,6 +25,8 @@ engine:
     - punct_translator
     - reverse_lookup_translator
     - table_translator
+    - reverse_lookup_translator
+    - reverse_lookup_translator
     - reverse_lookup_translator
 key_binder:
   bindings:
@@ -80,11 +84,13 @@ schema:
     
   name: "小鶴音形"
   schema_id: xhup
-  version: 2018.9.18.0.custom.78359725
+  version: 2018.9.18.0.custom.716111810
 simplifier:
   option_name: zh_simp
 speller:
   algebra:
+    - "xform/^([b-df-hj-np-tv-z])$/$1_/"
+    - "xform/^([b-df-hj-np-tv-z])$/$1_/"
     - "xform/^([b-df-hj-np-tv-z])$/$1_/"
   alphabet: "zyxwvutsrqponmlkjihgfedcba#"
   auto_clear: max_length
@@ -108,3 +114,4 @@ switches:
 translator:
   dictionary: xhup_luna
   enable_charset_filter: true
+  enable_user_dict: false

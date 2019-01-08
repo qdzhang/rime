@@ -24,5 +24,5 @@ patch:
       Control_L: noop
       Control_R: noop
       Eisu_toggle: clear
-      Shift_L: commit_code
-      Shift_R: commit_code
+      Shift_L: commit_text
+      Shift_R: inline_ascii
