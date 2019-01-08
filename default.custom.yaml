@@ -23,6 +23,6 @@ patch:
       Caps_Lock: noop
       Control_L: noop
       Control_R: noop
-      Eisu_toggle: clear
+      Eisu_toggle: noop
       Shift_L: commit_text
       Shift_R: inline_ascii

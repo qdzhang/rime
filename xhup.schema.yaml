@@ -64,20 +64,19 @@ recognizer:
     uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"
     url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
 reverse_lookup:
-  dictionary: flypydz
+  dictionary: pinyin_simp
   preedit_format:
     - "xform/([nl])v/$1ü/"
     - "xform/([nl])ue/$1üe/"
     - "xform/([jqxy])v/$1u/"
-  prefix: oi
-  suffix: "'"
+  prefix: "`"
   tips: "〔拼音〕"
 schema:
   author:
     - "xhup by 鶴"
     - "Rime schema by Zhaosheng Pan <zhaosheng.pan@sololand.moe>"
   dependencies:
-    - flypydz
+    - pinyin_simp
   description: |
     小鶴雙拼音形方案
     四键自动上屏
