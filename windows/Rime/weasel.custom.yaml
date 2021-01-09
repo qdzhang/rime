@@ -1,0 +1,8 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.14.0
+  generator: "Weasel::UIStyleSettings"
+  modified_time: "Sat Sep 21 17:53:30 2019"
+  rime_version: 1.5.0
+patch:
+  "style/color_scheme": luna

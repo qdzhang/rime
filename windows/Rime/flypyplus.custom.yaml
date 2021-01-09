@@ -1,0 +1,15 @@
+patch:
+  # 引用 `symbols.custom` 文件里面的符号
+  'punctuator/import_preset': symbols.custom
+  "recognizer/patterns/punct": "^/([A-Z|a-z]*|[0-9]|10)$"
+  "engine/translators":
+    - punct_translator
+    - table_translator
+    - table_translator@custom_phraseXT
+    - table_translator@custom_phraseVD
+    - table_translator@custom_phraseYH
+    - reverse_lookup_translator
+    - history_translator@history
+    - lua_translator@date_translator
+    - lua_translator@time_translator
+    - lua_translator@number_translator
